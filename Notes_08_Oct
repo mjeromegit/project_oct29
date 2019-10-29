@@ -1,0 +1,68 @@
+systemctl
+
+start
+stop
+status
+reload ----> refresh ---> re-reading the configuration file
+enable
+disable
+
+hostnamectl - OS type and instance type gets displayed
+hostname - displays hostname
+
+To change hostname: hostnamectl set-hostname httpserver01 ----> permanently hostname is changed.
+hostname command can also change hostname, but it is temporary.
+
+hostnamectl --> displays Static hostname and Transient hostname.
+
+
+
+========================
+
+Soft link and hard link:
+
+
+VI commands:
+
+i,a,I,A,o,O ---> commands in VI
+
+Modes: Command mode or escape mode, Edit mode and Menu Commands
+
+
+i --> start typing from before the word
+a --> start typing from after the word
+o --> new line below the current line
+O --> insert a new line above line
+A --> 
+I --> 
+u --> undo one by one the actions
+U --> will undo only on that particular line
+x --> it will delete one letter by letter
+dd --> delete a line
+yy --> to copy a line
+p --> to paste it --> content copied will be pasted below the current line.
+
+
+
+Menu commands --> given after : --> set nu, set nonu --> nonu will remove the number
+
+:s/vasanth/devops/g --> search vasanth and replace with devops --> substitution
+
+useradd -aG wheel testuser ---> it will create testuser with secondary groups as wheel, and by default testuser group is created as the primary group of it.
+
+if we use, -g then we can mention explicitly about the primary group.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
