@@ -1,0 +1,81 @@
+
+ git diff will give the difference current head and working tree
+
+ Repo
+ Commits with commit IDs
+ Branches 
+ heads are the commit IDs
+ HEAD is the pointer or the current commit's ID
+ Each commit will have a SHA key (Encrypted key)
+ 
+ A repo can have multiple branches.
+ 
+ stash is hiding the changes made in the working tree
+
+ git add will make it staged
+ git commit -m "Second commit" 
+ 
+ 
+ Files inside .gitignore file are ignored by git tracking
+ But .gitignore will be tracked
+ If we put .gitignore inside .gitignore, then it is also ignored. but it is not recommended
+ 
+ 
+ stash is different from .gitignore
+ git status ---> command
+ 
+ git log --oneline
+ 
+ git remote add origin https://
+ 
+ git remote set-url origin https://
+ 
+ When we clone, then the URL will be automatically set.
+ 
+ So, go to the folder where local repo is set, and execute git remote set-url origin https:// so that there will be remote repo for this local repo.
+ 
+ mjerome25@gmail.com
+ mjerome1981
+ 
+  sudo su -
+    2  git config --global user.name "Jerome2"
+    3  git config --global user.email "mjerome25@gmail.com"
+    4  git config --global core.editor vim
+    5  git config -L
+    6  git config -l
+    7  history
+	
+	git fetch ---> will update the head only (i.e. it updates only the index). It will not update the working tree.
+	git merge ---> It will update the working tree.
+	
+	git pull ---> fetch + merge
+	
+	git push ---> will update the origin as well.
+	
+	
+	
+	
+	
+	difference between fetch and pull
+
+[admin@ip-10-100-20-206 ~]$ pwd
+/home/admin
+[admin@ip-10-100-20-206 ~]$ ls -l
+total 0
+[admin@ip-10-100-20-206 ~]$ vi readme.md
+[admin@ip-10-100-20-206 ~]$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+[admin@ip-10-100-20-206 ~]$ git init
+Initialized empty Git repository in /home/admin/.git/
+[admin@ip-10-100-20-206 ~]$ ls -l
+total 4
+-rw-rw-r-- 1 admin admin 25 Oct 13 06:02 readme.md
+[admin@ip-10-100-20-206 ~]$
+[admin@ip-10-100-20-206 ~]$
+
+
+[admin@ip-10-100-20-206 ~]$
+[admin@ip-10-100-20-206 ~]$ git add .
+[admin@ip-10-100-20-206 ~]$
+[admin@ip-10-100-20-206 ~]$
+
